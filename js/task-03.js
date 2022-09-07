@@ -14,16 +14,9 @@ const images = [
 ];
 
 const imagesGalleryMarkup = images
-  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+  .map(({ url, alt }) => `<li><img class="gallery-img"src="${url}" alt="${alt}"></li>`)
   .join("");
 
 console.log(imagesGalleryMarkup);
 const galleryRef = document.querySelector(".gallery");
 galleryRef.insertAdjacentHTML("beforeend", imagesGalleryMarkup);
-
-//styles
-
-galleryRef.style.display = "flex";
-galleryRef.style.flexDirection = "column";
-galleryRef.style.gap = "30px";
-galleryRef.style.listStyle = "none";

@@ -1,4 +1,4 @@
-const formRef = document.querySelector(".login-form");
+const formRef = document.querySelector("form.login-form");
 
 function onFormSubmit(event) {
   event.preventDefault();

@@ -1,4 +1,4 @@
-const inputRef = document.querySelector("#validation-input");
+const inputRef = document.querySelector("input#validation-input");
 const lengthRef = Number(inputRef.dataset.length);
 
 function onInputBlur(event) {

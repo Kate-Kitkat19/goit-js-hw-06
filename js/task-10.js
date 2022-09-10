@@ -11,7 +11,7 @@ const destroyBtn = document.querySelector("button[data-destroy]");
 function createBoxes(amount) {
   amount = event.currentTarget.value;
   const numbersArray = [];
-  for (let i = 0; i < amount; i++) {
+  for (let i = 0; i < amount; i+=1) {
     numbersArray.push(i);
   }
   let width = 30;
